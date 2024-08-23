@@ -1,4 +1,105 @@
-* {
-    font-family:monospace;
+:root {
+    --color-comb1: #0d1f9d;
+    --color-comb2: #fcf7ff;
+    --color-comb3: #968ab6;
+    --color-comb4: #e8d5b5;
 }
 
+* {
+    font-family:monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Styling headers and nav using Basic CSS properties */
+/* header {
+    background-color: #0d1f9d;
+    color: #fcf7ff;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 5px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fcf7ff;
+    text-decoration: none;
+} */
+
+/* Styling using the Flexbox layout */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-comb1);
+    color: var(--color-comb2);
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: #fcf7ff;
+    text-decoration: none;
+}
+
+/* Styling with Grid */
+/* header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background-color: #0d1f9d;
+    color: #fcf7ff;
+    padding: 30px;
+}
+
+header h1 {
+    grid-column: 2 / 3;
+    text-align: right;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+header nav ul li a {
+    color: var(--header-text-color);
+    text-decoration: none;
+} */
+
+main {
+    padding: auto;
+    background-color: var(--color-comb2);
+    color: var(--color-comb1);
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--color-comb4);
+}
