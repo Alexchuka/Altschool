@@ -105,14 +105,30 @@ header nav ul li a {
     text-decoration: none;
 } */
 
+/* Styling the main contents (section and article) */
 main {
     background-color: var(--color-comb2);
     color: var(--color-comb1);
     padding: 20px;
 }
 
+section { 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+}
+
 p {
-    text-align: justify;
+    text-align: left;
     line-height: 30px;
     letter-spacing: 2px;
     font-size: 14px;
@@ -122,4 +138,32 @@ footer {
     padding: 20px;
     text-align: center;
     background-color: var(--color-comb4);
+}
+
+table {
+    border-collapse: collapse; /* Ensures borders don't double up */
+}
+table, th, td {
+    border: 1px solid var(--color-comb3); /* Adds border to the table, header, and data cells */
+    padding: 20px;
+    text-align: left;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+} 
+tr:nth-child(even) {
+    background-color: var(--color-comb4);
+}
+tr:hover {
+    background-color: var(--color-comb1);
+    color: var(--color-comb2);
+}
+th {
+    background-color: var(--color-comb1);
+    color: var(--color-comb2);
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
