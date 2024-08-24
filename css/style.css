@@ -66,6 +66,18 @@ header nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: var(--color-comb4);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+  }
+
 /* Styling with Grid */
 /* header {
     display: grid;
@@ -94,12 +106,12 @@ header nav ul li a {
 } */
 
 main {
-    padding: auto;
     background-color: var(--color-comb2);
     color: var(--color-comb1);
 }
 
 footer {
     padding: 20px;
+    text-align: center;
     background-color: var(--color-comb4);
 }
