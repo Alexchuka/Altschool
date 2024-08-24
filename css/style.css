@@ -108,6 +108,14 @@ header nav ul li a {
 main {
     background-color: var(--color-comb2);
     color: var(--color-comb1);
+    padding: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-size: 14px;
 }
 
 footer {
