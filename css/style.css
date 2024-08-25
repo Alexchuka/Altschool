@@ -140,6 +140,10 @@ footer {
     background-color: var(--color-comb4);
 }
 
+footer p {
+    text-align: center;
+}
+
 table {
     border-collapse: collapse; /* Ensures borders don't double up */
 }
@@ -151,13 +155,21 @@ table, th, td {
     letter-spacing: 1px;
     font-size: 14px;
 } 
+
 tr:nth-child(even) {
     background-color: var(--color-comb4);
 }
+
 tr:hover {
     background-color: var(--color-comb1);
     color: var(--color-comb2);
 }
+
+th:hover {
+    background-color: var(--color-comb2);
+    color: var(--color-comb1);
+}
+
 th {
     background-color: var(--color-comb1);
     color: var(--color-comb2);
@@ -167,3 +179,31 @@ th {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    thead, tbody, tr, td, th {
+        display: block;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td, th {
+        text-align: left;
+        padding: 10px;
+        flex: 1;
+    }
+
+    thead {
+        display: none;
+    }
+} 
