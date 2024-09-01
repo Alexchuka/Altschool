@@ -180,6 +180,7 @@ th {
     font-weight: bold;
 }
 
+/* Responsive Table */
 @media (max-width: 768px) {
     table {
         display: flex;
@@ -206,4 +207,10 @@ th {
     thead {
         display: none;
     }
-} 
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
