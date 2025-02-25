@@ -6,7 +6,14 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="pictures/EHSymbol - Vibrant Red - RGB.png" type="image/x-icon">
     <title>English Heritage</title>
-    <script src='https://cdn.checkout.ventrata.com/v3/production/ventrata-checkout.min.js' type='module' data-config='{"apiKey":"a5bba08c-e7bd-4b80-bcf1-95a1a66459f6", "env": "test" }'></script>
+    <script src='https://cdn.checkout.ventrata.com/v3/production/ventrata-checkout.min.js' type='module' data-config='{"apiKey":"a5bba08c-e7bd-4b80-bcf1-95a1a66459f6", "env": "test" "features": {
+      "preselectFirstAvailableDateModalCalendar": true,
+      "calendarFirst": {
+        "enabled": true,
+        "showUnitTypes": false
+      }
+    } }'>
+  </script>
 </head>
 <body>
     <header class="eh-headers">
