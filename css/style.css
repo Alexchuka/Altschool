@@ -227,15 +227,15 @@ button {
   }
   
   button:hover {
-    background-color: #E62506;
+    background-color: #005446;
     transform: scale(1.05);
   }
   
 button:active {
-    background-color: #E62506;
+    background-color: #005446;
     transform: scale(1);
   }
 
   .eh-headers {
-    background-color: #E62506;
+    background-color: #005446;
   }
