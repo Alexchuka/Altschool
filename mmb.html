@@ -1,18 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>MMB</title>
-    <script src='https://cdn.checkout.ventrata.com/v3/production/ventrata-checkout.min.js' type='module' data-config='{
+    <script
+      src="https://cdn.checkout.ventrata.com/v3/production/ventrata-checkout.min.js"
+      type="module"
+      data-config='{
         "apiKey":"33e5f1d5-a712-4077-b7e6-f3111d40f28c",
         "embedded":true,
-        "env": "test",
-        "defaultTheme": "dark"
-    }'>
-  </script>
+        "env": "test"
+    }'
+    ></script>
 
-  <body>
-    <div ventrata-manage-my-booking></div>
-  </body>
+    <body>
+      <header class="eh-headers">
+        <h1>Merlin</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="mmb.html">MMB</a></li>
+            <li><a href="merlin.html">Cal First Checkout</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div ventrata-manage-my-booking></div>
+      </main>
+    </body>
+  </head>
+</html>
