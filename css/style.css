@@ -6,7 +6,7 @@
 }
 
 * {
-    font-family:monospace;
+    font-family: monospace;
     margin: 0px;
     padding: 0px;
 }
@@ -227,15 +227,15 @@ button {
   }
   
   button:hover {
-    background-color: #005446;
+    background-color: #000555;
     transform: scale(1.05);
   }
   
 button:active {
-    background-color: #005446;
+    background-color: #000555;
     transform: scale(1);
   }
 
   .eh-headers {
-    background-color: #005446;
+    background-color: #000555;
   }
